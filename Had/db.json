@@ -1,0 +1,40 @@
+{
+  "inscriptions": [
+    {
+      "id": "2696",
+      "nom": "Naioo",
+      "prenom": "Adjinie",
+      "email": "hadlinguerrier@gmail.com",
+      "classe": "Ns3",
+      "ecole": "se",
+      "telephone": "5555",
+      "password": "1234",
+      "appointmentDate": "2024-09-29",
+      "appointmentTime": "04:24"
+    },
+    {
+      "id": "7236",
+      "nom": "Naioo",
+      "prenom": "Adjinie",
+      "email": "hadlinguerrier@gmail.com",
+      "classe": "Ns3",
+      "ecole": "se",
+      "telephone": "5555",
+      "password": "1234",
+      "appointmentDate": "2024-09-29",
+      "appointmentTime": "09:27"
+    },
+    {
+      "id": "66ff",
+      "nom": "Naioo",
+      "prenom": "Adjinie",
+      "email": "hadlinguerrier@gmail.com",
+      "classe": "Ns3",
+      "ecole": "se",
+      "telephone": "5555",
+      "password": "1234",
+      "appointmentDate": "2024-09-29",
+      "appointmentTime": "05:00"
+    }
+  ]
+}

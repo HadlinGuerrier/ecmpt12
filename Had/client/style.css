@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #44464b; /* Background color for the whole page */
+  color: yellow; /* Dark text color for readability */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  height: 90%;
+  width: 100%;
+  max-width: 100;
+  background-color: rgb(
+    82,
+    86,
+    90
+  ); /* White background for the form container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: auto;
+}
+
+.logo {
+  display: flex;
+  max-width: 300px;
+  margin: 0 auto 0;
+  margin-left: inherit;
+}
+
+h1.kingster-page-title {
+  text-align: center;
+  color: #007bff; /* Blue color for the title */
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 13px;
+  }
+
+  .input-container {
+    margin-bottom: 8px;
+  }
+
+  input[type="submit"] {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

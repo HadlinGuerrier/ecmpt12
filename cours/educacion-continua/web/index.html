@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Login-ECMPT</title>
+
+    <link
+      rel="icon"
+      href="../../../wp-content/uploads/2021/05/logo1.png"
+      sizes="32x32"
+    />
+  </head>
+  <body>
+    <div class="login"> 
+        <div class="login__content">
+          <div class="login__img">
+            <img src="assets/img/img-login.png" alt="" />
+          </div>
+      
+          <div class="login__forms">
+            <form action="" class="login__registre" id="login-in">
+              <h1 class="login__title">Login</h1>
+      
+              <div class="login__box">
+                <i class="bx bx-user login__icon"></i>
+                <input type="text" id="username" placeholder="Username" class="login__input" />
+              </div>
+      
+              <div class="login__box">
+                <i class="bx bx-lock-alt login__icon"></i>
+                <input type="password" id="password" placeholder="Password" class="login__input" />
+              </div>
+      
+              <a href="../../../contacto/index.html" class="login__forgot">Forgot password?</a>
+      
+              <button type="submit" class="login__button">Sign In</button>
+            </form>
+      
+            
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        const users = [
+        //ns1
+          { username: "user1", password: "pass1", redirect: "../1/index.html" },
+          { username: "user2", password: "pass2", redirect: "../1/index.html" },
+          { username: "user3", password: "pass3", redirect: "../1/index.html" },
+          { username: "user4", password: "pass4", redirect: "../1/index.html" },
+          { username: "user5", password: "pass5", redirect: "../1/index.html" },
+          { username: "user6", password: "pass6", redirect: "../1/index.html" },
+          { username: "user7", password: "pass7", redirect: "../1/index.html" },
+          { username: "user8", password: "pass8", redirect: "../1/index.html" },
+          { username: "user9", password: "pass9", redirect: "../1/index.html" },
+          { username: "user10", password: "pass10", redirect: "../1/index.html" },
+          { username: "user11", password: "pass11", redirect: "../1/index.html" },
+          { username: "user12", password: "pass12", redirect: "../1/index.html" },
+          { username: "user13", password: "pass13", redirect: "../1/index.html" },
+          { username: "user14", password: "pass14", redirect: "../1/index.html" },
+          { username: "user15", password: "pass15", redirect: "../1/index.html" },
+          { username: "user16", password: "pass16", redirect: "../1/index.html" },
+          { username: "user17", password: "pass17", redirect: "../1/index.html" },
+          { username: "user18", password: "pass18", redirect: "../1/index.html" },
+          { username: "user19", password: "pass19", redirect: "../1/index.html" },
+          
+
+
+          //ns2
+          { username: "user1", password: "pass1", redirect: "../2/index.html" },
+          { username: "user2", password: "pass2", redirect: "../2/index.html" },
+          { username: "user3", password: "pass3", redirect: "../2/index.html" },
+          { username: "user4", password: "pass4", redirect: "../2/index.html" },
+          { username: "user5", password: "pass5", redirect: "../2/index.html" },
+          { username: "user6", password: "pass6", redirect: "../2/index.html" },
+          { username: "user7", password: "pass7", redirect: "../2/index.html" },
+          { username: "user8", password: "pass8", redirect: "../2/index.html" },
+          { username: "user9", password: "pass9", redirect: "../2/index.html" },
+          { username: "user10", password: "pass10", redirect: "../2/index.html" },
+          { username: "user11", password: "pass11", redirect: "../2/index.html" },
+          { username: "user12", password: "pass12", redirect: "../2/index.html" },
+          { username: "user13", password: "pass13", redirect: "../2/index.html" },
+          { username: "user14", password: "pass14", redirect: "../2/index.html" },
+          { username: "user15", password: "pass15", redirect: "../2/index.html" },
+          { username: "user16", password: "pass16", redirect: "../2/index.html" },
+          { username: "user17", password: "pass17", redirect: "../2/index.html" },
+          { username: "user18", password: "pass18", redirect: "../2/index.html" },
+          { username: "user19", password: "pass19", redirect: "../2/index.html" },
+          
+
+          //ns3
+          { username: "user1", password: "pass1", redirect: "../3/index.html" },
+          { username: "user2", password: "pass2", redirect: "../3/index.html" },
+          { username: "user3", password: "pass3", redirect: "../3/index.html" },
+          { username: "user4", password: "pass4", redirect: "../3/index.html" },
+          { username: "user5", password: "pass5", redirect: "../3/index.html" },
+          { username: "user6", password: "pass6", redirect: "../3/index.html" },
+          { username: "user7", password: "pass7", redirect: "../3/index.html" },
+          { username: "user8", password: "pass8", redirect: "../3/index.html" },
+          { username: "user9", password: "pass9", redirect: "../3/index.html" },
+          { username: "user10", password: "pass10", redirect: "../3/index.html" },
+          { username: "user11", password: "pass11", redirect: "../3/index.html" },
+          { username: "user12", password: "pass12", redirect: "../3/index.html" },
+          { username: "user13", password: "pass13", redirect: "../3/index.html" },
+          { username: "user14", password: "pass14", redirect: "../3/index.html" },
+          { username: "user15", password: "pass15", redirect: "../3/index.html" },
+          { username: "user16", password: "pass16", redirect: "../3/index.html" },
+          { username: "user17", password: "pass17", redirect: "../3/index.html" },
+          { username: "user18", password: "pass18", redirect: "../3/index.html" },
+          { username: "user19", password: "pass19", redirect: "../3/index.html" },
+          
+
+          //ns4
+          { username: "user1", password: "pass1", redirect: "../4/index.html" },
+          { username: "user2", password: "pass2", redirect: "../4/index.html" },
+          { username: "user3", password: "pass3", redirect: "../4/index.html" },
+          { username: "user4", password: "pass4", redirect: "../4/index.html" },
+          { username: "user5", password: "pass5", redirect: "../4/index.html" },
+          { username: "user6", password: "pass6", redirect: "../4/index.html" },
+          { username: "user7", password: "pass7", redirect: "../4/index.html" },
+          { username: "user8", password: "pass8", redirect: "../4/index.html" },
+          { username: "user9", password: "pass9", redirect: "../4/index.html" },
+          { username: "user10", password: "pass10", redirect: "../4/index.html" },
+          { username: "user11", password: "pass11", redirect: "../4/index.html" },
+          { username: "user12", password: "pass12", redirect: "../4/index.html" },
+          { username: "user13", password: "pass13", redirect: "../4/index.html" },
+          { username: "user14", password: "pass14", redirect: "../4/index.html" },
+          { username: "user15", password: "pass15", redirect: "../4/index.html" },
+          { username: "user16", password: "pass16", redirect: "../4/index.html" },
+          { username: "user17", password: "pass17", redirect: "../4/index.html" },
+          { username: "user18", password: "pass18", redirect: "../4/index.html" },
+          { username: "user19", password: "pass19", redirect: "../4/index.html" },
+          { username: "user20", password: "pass20", redirect: "../4/index.html" },
+
+
+        ];
+      
+        document.getElementById('login-in').addEventListener('submit', function(event) {
+          const statusMessage = document.getElementById("statusMessage");
+          event.preventDefault();
+          const usernameInput = document.getElementById('username').value;
+          const passwordInput = document.getElementById('password').value;
+      
+          const user = users.find(user => user.username === usernameInput && user.password === passwordInput);
+          
+          if (user) {
+            window.location.href = user.redirect;
+            else {
+              // Afficher "Erreur" si le nom d'utilisateur est incorrect
+              statusMessage.innerHTML = "<p class='error'>Nom d'utilisateur incorrect.</p>";
+              statusMessage.style.display = "block";
+
+        });
+      </script>
+
+      
+      
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
